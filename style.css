@@ -1,0 +1,11 @@
+body { margin:0; font-family:Arial,sans-serif; background:#000; color:#fff; }
+header { display:flex; align-items:center; justify-content:space-between; padding:10px 20px; background:linear-gradient(90deg,#ff00ff,#00ffff);}
+header .logo {height:50px;}
+nav ul {list-style:none; display:flex; gap:15px;}
+nav ul li a {text-decoration:none; color:#fff; font-weight:bold;}
+#search {padding:5px 10px; border-radius:5px; border:none; outline:none;}
+main {padding:20px; display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+.clip-card {background:linear-gradient(145deg,#ff00ff,#00ffff); padding:10px; border-radius:10px; width:200px; text-align:center;}
+.clip-card img {width:100%; border-radius:5px;}
+.preview-btn, .download-btn {margin-top:5px; padding:5px 10px; border:none; border-radius:5px; background:#000; color:#fff; cursor:pointer;}
+#preview-modal {display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#000; padding:10px; border:2px solid #ff00ff; z-index:1000;}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AZ Clips</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="assets/logo.png" alt="AZ Clips Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">New Uploads</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Popular Anime</a></li>
+        </ul>
+    </nav>
+    <input type="text" id="search" placeholder="Search clips or anime...">
+</header>
+
+<main>
+    <section class="clips" id="clips-container">
+        <!-- JS will load clips dynamically -->
+    </section>
+</main>
+
+<div id="preview-modal">
+    <video controls id="preview-video"></video>
+    <button onclick="closePreview()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

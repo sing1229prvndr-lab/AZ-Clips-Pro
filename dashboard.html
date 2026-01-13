@@ -1,0 +1,20 @@
+<h2>Admin Dashboard</h2>
+<form id="upload-form">
+    <input type="text" name="title" placeholder="Clip Title" required>
+    <input type="text" name="category" placeholder="Category" required>
+    <input type="text" name="tags" placeholder="Tags (comma separated)" required>
+    <input type="file" name="clip" required>
+    <input type="file" name="thumbnail" required>
+    <button type="submit">Upload Clip</button>
+</form>
+
+<script>
+document.getElementById('upload-form').addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const res = await fetch('/admin/upload', {method:'POST', body: formData});
+    const data = await res.json();
+    if(data.success) alert('Clip uploaded successfully!');
+    else alert('Upload failed!');
+});
+</script>
